@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- Inicio da estrutura-->
+<html>
+ <head>
+<meta charset="UTF-8">
+<meta name="viewport">
+<title> formulario </title>
+</head>
+ <body>
+  <form action="armazenardados.php" method="post">
+ <fieldset>
+  <legend>Pessoa:</legend>
+<!-- Dados da pessoa-->
+<h2>Nome: </h2>
+<input type="text" id="name" required 
+minlength="1"maxlength="30" placeholder="Guilherme de cunha">
+<h2>Email: </h2>
+<input type="email" id="email"required 
+minlength="1"maxlength="30" placeholder="guilherme@vieira.com">
+<h2>Data de nascimento: </h2>
+<input type="date" id="date"required 
+minlength="1"maxlength="30" placeholder="18/09/2005">
+<h2>Senha: </h2>
+<input type="password" id="senha"required 
+minlength="1"maxlength="30" >
+ </fieldset>
+<fieldset>
+  <legend>Dados:</legend>
+<h2>Telefone: </h2>
+<input type="tel" id="telefone"required 
+minlength="1"maxlength="30" placeholder="123-45-678" >
+<h2>Escolha de país</h2>
+<select name="país" id="país"required 
+minlength="1"maxlength="30">
+  <option value="Brasil">Brasil</option>
+  <option value="Estados Unidos">Estados Unidos</option>
+  <option value="Mexico">Mexico</option>
+  <option value="Arabia">Arabia</option>
+</select>
+<h2>Escolha de genero</h2><br>
+<input name="sexo" type="radio" id="masculino" required 
+minlength="1"maxlength="30">
+<label for="masculino">masculino</label><br>
+<input name="sexo" type="radio" id="feminino"required 
+minlength="1"maxlength="30">
+<label for="feminino">feminino</label><br>
+<input  name="sexo" type="radio" id="outro"required 
+minlength="1"maxlength="30">
+<label for="outro">outro</label><br>
+<h2>Termos de uso</h2>
+<input type="checkbox" id="termos de uso"required 
+minlength="1"maxlength="30">
+<label for="termos de uso">Termos uso</label>
+ </fieldset>
+<h2>Comentarios</h2>
+<textarea> </textarea><br>
+<!-- Botões de enviar-->
+<input type="submit">
+<input type="reset">
+
+
+</form>
+</body>
+</html>
